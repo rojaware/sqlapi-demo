@@ -2,12 +2,13 @@ const sql = require('mssql/msnodesqlv8')
 
 const config = {
   database: 'RcsUsers',
-  user: 'sa',
-        password: '1',
-  server: 'localhost', //'SCOTT-PC\SQLEXPRESS',
+  user: 'scott',
+  password: '1',
+  server: 'SCOTT-PC',
   driver: 'msnodesqlv8',
   options: {
-    trustedConnection: true
+    trustedConnection: true,    
+    instanceName: 'SQLEXPRESS01'
   }
 } 
 const poolPromise = new sql.ConnectionPool(config)

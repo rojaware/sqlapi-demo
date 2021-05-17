@@ -4,7 +4,7 @@
   "description": "Building a simple REST API with NodeJS , Express and SQL server",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon --exec babel-node app.js",
+    "start": "nodemon --exec app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {

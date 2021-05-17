@@ -3,10 +3,12 @@ const fs = require('fs');
 var rawdata = fs.readFileSync('./query/queries.json');
 var queries = JSON.parse(rawdata);
 class MainController {
-    async getAllData(req, res) {
+    async getUsers(req, res) {
+        console.log('i am at getusers');
+        
         try {
             const pool = await poolPromise
-            const result = await pool.request().query(queries.getAllData)
+            const result = await pool.request().query(queries.getUsers)
             res.json(result.recordset)
         } catch (error) {
             res.status(500)

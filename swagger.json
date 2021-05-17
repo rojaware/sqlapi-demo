@@ -27,12 +27,12 @@
         "application/json"
     ],
     "paths": {
-        "/api/getAllData": {
+        "/api/users": {
             "get": {
                 "tags": [
                     "Users"
                 ],
-                "summary": "Get all data in system",
+                "summary": "Get all users in system",
                 "responses": {
                     "200": {
                         "description": "OK"
